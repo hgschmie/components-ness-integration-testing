@@ -25,13 +25,13 @@ import com.google.inject.Module;
 import com.google.inject.Provider;
 import com.google.inject.Scopes;
 
-import org.weakref.jmx.MBeanExporter;
-import org.weakref.jmx.guice.MBeanModule;
-import org.weakref.jmx.testing.TestingMBeanServer;
-
 import com.nesscomputing.config.Config;
 import com.nesscomputing.lifecycle.ServiceDiscoveryLifecycle;
 import com.nesscomputing.lifecycle.guice.LifecycleModule;
+
+import org.weakref.jmx.MBeanExporter;
+import org.weakref.jmx.guice.MBeanModule;
+import org.weakref.jmx.testing.TestingMBeanServer;
 
 /**
  * All tweaked modules available by default.

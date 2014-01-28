@@ -18,7 +18,6 @@ package com.nesscomputing.testing;
 import java.util.Map;
 
 import com.google.inject.Module;
-import com.nesscomputing.testing.tweaked.TweakedModule;
 
 /**
  * Integration testing extension that mocks out a platform service, for example discovery.

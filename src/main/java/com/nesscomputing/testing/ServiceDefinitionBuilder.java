@@ -18,16 +18,17 @@ package com.nesscomputing.testing;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.configuration.MapConfiguration;
-
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.inject.AbstractModule;
 import com.google.inject.Module;
 import com.google.inject.Provider;
+
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
 import com.nesscomputing.testing.tweaked.TweakedModule;
+
+import org.apache.commons.configuration.MapConfiguration;
 
 /**
  * Build a ServiceDefinition to use in test cases.

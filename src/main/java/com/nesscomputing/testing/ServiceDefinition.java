@@ -18,7 +18,6 @@ package com.nesscomputing.testing;
 import java.util.Map;
 
 import com.google.inject.Module;
-import com.nesscomputing.testing.tweaked.TweakedModule;
 
 /**
  * Encapsulate configuration and Guice bindings for an individual service.

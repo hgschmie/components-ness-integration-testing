@@ -5,21 +5,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.nesscomputing</groupId>
-    <artifactId>ness-oss-parent</artifactId>
-    <version>26</version>
+    <artifactId>ness-root</artifactId>
+    <version>1.0-SNAPSHOT</version>
   </parent>
-
-  <scm>
-    <connection>scm:git:git://github.com/NessComputing/components-ness-integration-testing.git</connection>
-    <developerConnection>scm:git:git@github.com:NessComputing/components-ness-integration-testing.git</developerConnection>
-    <url>http://github.com/NessComputing/components-ness-integration-testing</url>
-    <tag>HEAD</tag>
-  </scm>
 
   <groupId>com.nesscomputing.components</groupId>
   <artifactId>ness-integration-testing</artifactId>
   <name>ness-integration-testing</name>
-  <version>3.3.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>ness integration testing helpers</description>
 
@@ -27,22 +19,18 @@
     <dependency>
       <groupId>com.nesscomputing.components</groupId>
       <artifactId>ness-logging</artifactId>
-      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.nesscomputing.components</groupId>
       <artifactId>ness-config</artifactId>
-      <version>2.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.nesscomputing.components</groupId>
       <artifactId>ness-lifecycle</artifactId>
-      <version>1.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.nesscomputing.components</groupId>
       <artifactId>ness-httpserver</artifactId>
-      <version>2.2.0</version>
       <optional>true</optional>
     </dependency>
 
@@ -63,19 +51,20 @@
 
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
-      <artifactId>jsr305</artifactId>
+      <artifactId>annotations</artifactId>
     </dependency>
 
     <dependency>
       <groupId>org.weakref</groupId>
       <artifactId>jmxutils</artifactId>
-      <version>1.12</version>
     </dependency>
 
     <!-- Annotations used in the integration test builder -->
     <dependency>
-      <groupId>com.nesscomputing.testing</groupId>
-      <artifactId>kawala-lessio</artifactId>
+      <groupId>org.kitei.testing</groupId>
+      <artifactId>kitei-lessio</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
     </dependency>
 
     <dependency>

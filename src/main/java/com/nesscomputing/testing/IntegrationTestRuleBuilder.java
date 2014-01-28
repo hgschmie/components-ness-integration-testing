@@ -24,22 +24,18 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.inject.Binder;
-import com.google.inject.Injector;
 import com.google.inject.Module;
 import com.google.inject.Provider;
 import com.google.inject.name.Names;
 import com.google.inject.util.Modules;
 
-import org.apache.commons.configuration.MapConfiguration;
-import org.junit.Rule;
-
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
-import com.nesscomputing.lifecycle.Lifecycle;
 import com.nesscomputing.lifecycle.LifecycleStage;
 import com.nesscomputing.testing.tweaked.TweakedModule;
-import com.nesscomputing.testing.tweaked.TweakedModules;
 import com.nesscomputing.testing.tweaked.TweakedModules.TweakEnabler;
+
+import org.apache.commons.configuration.MapConfiguration;
 
 /**
  * Builds a {@link Rule} for use in tests which spins up one or more Jetty services, and exposes their HTTP servers

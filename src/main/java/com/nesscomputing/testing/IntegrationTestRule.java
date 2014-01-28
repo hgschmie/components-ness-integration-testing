@@ -20,9 +20,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.junit.Rule;
-import org.junit.rules.ExternalResource;
-
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -36,7 +33,9 @@ import com.google.inject.Stage;
 
 import com.nesscomputing.lifecycle.Lifecycle;
 import com.nesscomputing.lifecycle.LifecycleStage;
-import com.nesscomputing.testing.lessio.AllowAll;
+
+import org.junit.rules.ExternalResource;
+import org.kitei.testing.lessio.AllowAll;
 
 
 /**
